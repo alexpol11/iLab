@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int func_Unnamed(int number){
+int resh(int number){
     if (((number + 2) % 4) == 0){
         return 0;
     }
@@ -10,14 +10,14 @@ int func_Unnamed(int number){
         }
         else{
             if (((number - 1) % 4) == 0){
-                return func_Unnamed((number - 1) / 4);
+                return resh((number - 1) / 4);
             }
             else{
                 if ((number % 4) == 0){
-                    return func_Unnamed((number) / 4);
+                    return resh((number) / 4);
                 }
                 else{
-                    return func_Unnamed((number + 1) / 4);
+                    return resh((number + 1) / 4);
                 }
             }
         }
