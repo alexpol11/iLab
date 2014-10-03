@@ -32,7 +32,7 @@ void printKorni(struct Korni otv){
 
 struct Cisla scanKoeff(struct Cisla koeff){
     printf("Ax^2 + Bx + C = 0\nWaiting for A, B, C...\n");
-    scanf("%lg %lg %lg", &koeff.a, &koeff.b, koeff.c);
+    scanf("%lg %lg %lg", &koeff.a, &koeff.b, &koeff.c);
     return koeff;
 }
 
@@ -90,6 +90,5 @@ int main(){
     otv = resh(koeff);
 
     printKorni(otv);
-    system("pause");
     return 0;
 }
